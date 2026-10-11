@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>it-noda — Разработка ПО, сайтов и ботов на заказ</title>
+<meta name="description" content="Разработка программного обеспечения, сайтов и Telegram-ботов под задачи вашего бизнеса.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav"><div class="container nav-in">
+  <a href="#" class="logo">it-noda</a>
+  <nav class="links"><a href="#services">Услуги</a><a href="#process">Как работаем</a><a href="#portfolio">Работы</a><a href="#contact" class="btn btn-sm">Оставить заявку</a></nav>
+</div></header>
+
+<section class="hero"><div class="container">
+  <p class="tag">it-noda · разработка на заказ</p>
+  <h1>Создаю софт, сайты и ботов, <span class="grad">которые решают задачи бизнеса</span></h1>
+  <p class="lead">От идеи до запуска: проектирование, разработка, тестирование и поддержка. Понятные сроки и прозрачный процесс.</p>
+  <div class="cta"><a href="#contact" class="btn">Обсудить проект</a><a href="#services" class="btn btn-ghost">Смотреть услуги</a></div>
+</div></section>
+
+<section id="services"><div class="container">
+  <h2>Услуги</h2>
+  <div class="grid">
+    <div class="card"><div class="ic">💻</div><h3>Программное обеспечение</h3><p>Десктопные и серверные приложения, автоматизация процессов, интеграции с сервисами.</p></div>
+    <div class="card"><div class="ic">🌐</div><h3>Сайты</h3><p>Лендинги, корпоративные сайты и веб-приложения с адаптивной вёрсткой.</p></div>
+    <div class="card"><div class="ic">🤖</div><h3>Telegram-боты</h3><p>Боты для заявок, продаж, поддержки клиентов и внутренних задач команды.</p></div>
+    <div class="card"><div class="ic">⚙️</div><h3>ПО на заказ</h3><p>Индивидуальные решения под ваши процессы: CRM-модули, панели, парсеры, API.</p></div>
+  </div>
+</div></section>
+
+<section id="process" class="alt"><div class="container">
+  <h2>Как мы работаем</h2>
+  <ol class="steps">
+    <li><b>01</b><h3>Заявка</h3><p>Вы описываете задачу, я уточняю детали.</p></li>
+    <li><b>02</b><h3>Оценка</h3><p>Предлагаю решение, сроки и стоимость.</p></li>
+    <li><b>03</b><h3>Разработка</h3><p>Работаю этапами и показываю промежуточный результат.</p></li>
+    <li><b>04</b><h3>Запуск</h3><p>Тестирую, разворачиваю и передаю проект.</p></li>
+    <li><b>05</b><h3>Поддержка</h3><p>Помогаю с доработками после запуска.</p></li>
+  </ol>
+</div></section>
+
+<section id="portfolio"><div class="container">
+  <h2>Портфолио</h2>
+  <p class="muted">Ниже — примеры форматов проектов. Реальные кейсы будут добавлены позже.</p>
+  <div class="grid">
+    <div class="card pf"><div class="thumb">Сайт</div><span class="badge">Пример</span><h3>Лендинг для услуги</h3><p>Одностраничный сайт с формой заявки.</p></div>
+    <div class="card pf"><div class="thumb">Бот</div><span class="badge">Пример</span><h3>Telegram-бот для записи</h3><p>Приём заявок и уведомления администратору.</p></div>
+    <div class="card pf"><div class="thumb">ПО</div><span class="badge">Пример</span><h3>Панель управления</h3><p>Веб-интерфейс для учёта и отчётов.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="container">
+  <h2>Почему со мной удобно</h2>
+  <div class="grid">
+    <div class="card"><h3>Прямая связь</h3><p>Общаетесь напрямую с разработчиком, без посредников.</p></div>
+    <div class="card"><h3>Прозрачность</h3><p>Этапы, сроки и стоимость фиксируются до начала работ.</p></div>
+    <div class="card"><h3>Полный цикл</h3><p>От идеи и дизайна до запуска и поддержки.</p></div>
+    <div class="card"><h3>Код — ваш</h3><p>Передаю исходники и доступы после завершения.</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container narrow">
+  <h2>Оставить заявку</h2>
+  <p class="muted">Опишите задачу — я свяжусь с вами и предложу решение.</p>
+  <form id="lead" novalidate>
+    <label>Имя*<input name="name" autocomplete="name"><small></small></label>
+    <label>Телефон, email или Telegram*<input name="contact"><small></small></label>
+    <label>Тип проекта*<select name="type"><option value="">Выберите…</option><option>Сайт</option><option>Telegram-бот</option><option>Программное обеспечение</option><option>Другое</option></select><small></small></label>
+    <label>Описание задачи*<textarea name="desc" rows="5"></textarea><small></small></label>
+    <label>Бюджет (необязательно)<input name="budget" placeholder="ориентировочная сумма или «обсудим»"></label>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p id="formError" class="form-error" hidden></p>
+    <button class="btn" type="submit">Отправить заявку</button>
+  </form>
+  <div id="success" class="success" hidden><h3>Спасибо! Заявка отправлена.</h3><p>Я свяжусь с вами в ближайшее время.</p></div>
+</div></section>
+
+<footer><div class="container nav-in"><span>it-noda · Разработка ПО, сайтов и ботов</span><span>© <span id="y"></span> it-noda</span></div></footer>
+<script src="script.js"></script>
+</body></html>
